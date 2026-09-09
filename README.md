@@ -2,7 +2,7 @@
 
 > dsh 分布式开发工具链的 Windows 桌面管理端
 
-DSH-Dock 是 dsh（DeepSeek Harness）在 Windows 上的桌面入口与管理界面，基于 Python + Tray 守护进程实现，提供多实例管理、插件市场、手机连接等能力，并产出**免安装的绿色版 DSH-Dock.exe** 用于分发。
+DSH-Dock 是 dsh（DeepSeek Harness）在 Windows 上的桌面入口与管理界面，基于 Python + Tray 守护进程实现，提供多实例管理、插件市场、手机连接等能力，并产出**免安装的绿色版DSH-Dock.exe** 用于分发。
 
 ## 功能一览
 
@@ -57,7 +57,7 @@ python -m PyInstaller DSH.spec --noconfirm --log-level ERROR
 
 ### 手机访问
 
-管理界面点击「手机连接」→ 一键将 3080 端口开放到局域网 → 手机浏览器访问界面显示的链接即可，关闭后自动恢复本机独占。
+管理界面点击「手机连接」→ 一键将 default 端口开放到局域网 → 手机浏览器访问界面显示的链接即可，关闭后自动恢复本机独占。
 
 ## 相关项目
 
