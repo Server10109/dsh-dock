@@ -1,0 +1,19 @@
+# 运行时产物
+DSH.log
+DSH.log.*
+dsh.ini
+dsh.ini.bak
+cron_tasks.json
+work/
+
+# Python
+__pycache__/
+*.pyc
+
+# 打包产物
+build/
+dist/
+*.spec.bak
+
+# 其他
+.pytest_cache/
