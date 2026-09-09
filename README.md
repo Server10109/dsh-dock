@@ -1,4 +1,4 @@
-﻿# DSH-Dock
+# DSH-Dock
 
 > dsh 分布式开发工具链的 Windows 桌面管理端
 
@@ -22,6 +22,29 @@ DSH-Dock 是 dsh（DeepSeek Harness）在 Windows 上的桌面入口与管理界
 
 请到 [Releases](../../releases) 下载最新的 DSH-Dock.exe（绿色单文件，约 37MB）。
 
+## 源码结构
+
+本仓库 main 分支即为正式源码：
+
+| 文件 | 说明 |
+|---|---|
+| launcher.py | DSH-Dock 主程序（Python，单文件实现） |
+| DSH.spec | PyInstaller 打包配置 |
+| DSH.ico | 应用图标 |
+| _market_plugins.json | 插件市场种子数据 |
+
+> 本仓库源码为正式版，已剔除设备上报/邮件发送等内嵌功能，仅保留核心管理能力；exe 分发版亦为同一源构建。
+
+## 开发构建
+
+```bash
+# 安装依赖（pystray / Pillow / pywebview 等）
+pip install pystray Pillow
+
+# 打包为 DSH-Dock.exe
+python -m PyInstaller DSH.spec --noconfirm --log-level ERROR
+```
+
 ## 环境要求
 
 - Windows 10 / 11（64 位）
@@ -37,10 +60,6 @@ DSH-Dock 是 dsh（DeepSeek Harness）在 Windows 上的桌面入口与管理界
 ### 手机访问
 
 管理界面点击「手机连接」→ 一键将 3080 端口开放到局域网 → 手机浏览器访问界面显示的链接即可，关闭后自动恢复本机独占。
-
-## 配置
-
-配置文件固定位于用户主目录 C:\Users\<用户名>\dsh.ini，首次运行自动生成；支持从旧位置（%APPDATA%\DSH-Dock、exe 目录）自动迁移。
 
 ## 相关项目
 
