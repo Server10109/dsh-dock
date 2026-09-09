@@ -33,8 +33,6 @@ DSH-Dock 是 dsh（DeepSeek Harness）在 Windows 上的桌面入口与管理界
 | DSH.ico | 应用图标 |
 | _market_plugins.json | 插件市场种子数据 |
 
-> 本仓库源码为正式版，已剔除设备上报/邮件发送等内嵌功能，仅保留核心管理能力；exe 分发版亦为同一源构建。
-
 ## 开发构建
 
 ```bash
